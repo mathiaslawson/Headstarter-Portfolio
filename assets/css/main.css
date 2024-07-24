@@ -3954,3 +3954,24 @@ input, select, textarea {
 			height: 50px; /* Adjust size as needed */
 		}
 		
+
+
+		.squiggle-underline {
+			display: inline-block;
+			position: relative;
+			color: #000; /* Adjust text color as needed */
+		  }
+		  
+		  .squiggle-underline::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: -5px; /* Adjust based on the height of your text */
+			width: 100%;
+			height: 5px; /* Height of the underline */
+			background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10"><path d="M0 5 Q 10 0, 20 5 T 40 5 T 60 5 T 80 5 T 100 5" stroke="white" stroke-width="2" fill="transparent"/></svg>') repeat-x;
+		  }
+
+		.project-name{
+			color: white;
+		}
