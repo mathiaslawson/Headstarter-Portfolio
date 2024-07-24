@@ -34,26 +34,56 @@ body {
 	line-height: 1;
 }
 
-.nav-list{
 
+.nav-container{
+	display: flex;
+	justify-content: center;
+	font-size: large;
+}
+
+
+.icon-button{
+	cursor: pointer;
+}
+
+.nav-list{
+   width: 780px;
 	padding: 0px
+	
 }
 
 #nav{
-	padding: 0px;
+	
 	border-radius: 30px;
 	width: 200px;
 	border: 1px solid gray
+
 	/* margin-top: 30px; */
+}
+
+.name-text{
+	text-align: left;
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: 900; /* Extra bold */
+    background: -webkit-linear-gradient(45deg, #66fc52, #08ff4e, #789d44, #4a6f2e, #2a4a19);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(45deg, #d4ed66, #a4cc50, #789d44, #4a6f2e, #2a4a19);
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 0px;
 }
 
 .main-nav-list{
 	background-color: #0b0b0d !important;
-	padding: 10px !important;
+	width: 780px !important;
+	box-shadow: 0 8px 70px 1px rgba(224, 224, 224, 0.06), 0 3px 70px 2px rgba(230, 230, 230, 0.11), 0 5px 10px -3px rgba(235, 235, 235, 0.03) !important;
+	padding: 5px 0px 5px 0px !important;
 	border-radius: 40px !important;
 	margin-top: 10px;
 	border: 1px solid gray !important;
 	color: white !important;
+	
 }
 
 
@@ -70,6 +100,23 @@ a.nav-list-item:hover {
 }
 
 
+.logo-container{
+	display: flex;
+	justify-content: start;
+	margin-bottom: 40px;
+}
+
+.logo-inner{
+	display: flex;
+	justify-content: space-around;
+	width: 100px;
+}
+
+
+.footer-inner-container{
+	display: flex;
+	justify-content: space-between;
+}
 
 
 ol, ul {
@@ -138,12 +185,25 @@ input, select, textarea {
 	}
 
 	body {
-		/* background-color: #935d8c;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%); */
-		background-color: white;
+		position: relative;
+		background-color: #000000; /* Fallback color */
+		background-image: -moz-linear-gradient(45deg, #0b0b0b 15%, #030303 85%);
+		background-image: -webkit-linear-gradient(45deg, #000000 15%, #080808 85%);
+		background-image: -ms-linear-gradient(45deg, #0c0c0c 15%, #040404 85%);
+		background-image: linear-gradient(45deg, #0c0c0c 15%, #040404 85%);
+		z-index: 0; /* Ensure it’s behind the pseudo-element */
+	}
+	
+	body::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url("/assets/css/images/down-over.jpg");
+		opacity: 0.1;
+		z-index: -1;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -161,11 +221,11 @@ input, select, textarea {
 
 	body {
 		background-color: white;
-		color:black;
+		color:white;
 	}
 
 	body, input, select, textarea {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "Source Sans Pro", Helvetica, sans-serif !important;
 		font-size: 17pt;
 		font-weight: 300;
 		line-height: 1.65;
@@ -2130,7 +2190,7 @@ input, select, textarea {
 				text-rendering: auto;
 				line-height: 1;
 				text-transform: none !important;
-				font-family: 'Font Awesome 5 Free';
+				/* font-family: 'Font Awesome 5 Free'; */
 				font-weight: 900;
 			}
 
@@ -2275,7 +2335,7 @@ input, select, textarea {
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
+			/* font-family: 'Font Awesome 5 Free'; */
 			font-weight: 400;
 		}
 
@@ -2292,7 +2352,7 @@ input, select, textarea {
 		}
 
 		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
+			/* font-family: 'Font Awesome 5 Brands'; */
 		}
 
 		.icon.major {
