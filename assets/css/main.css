@@ -53,6 +53,20 @@ body {
 	border-radius: 40px !important;
 	margin-top: 10px;
 	border: 1px solid gray !important;
+	color: white !important;
+}
+
+
+.active{
+	color: black !important;
+	border-radius: 30px !important;
+}
+
+
+a.nav-list-item:hover { 
+      border-radius: 30px !important;
+	  color:gray  !important;
+	  /* background-color: transparent !important; */
 }
 
 
@@ -147,7 +161,7 @@ input, select, textarea {
 
 	body {
 		background-color: white;
-		color:black);
+		color:black;
 	}
 
 	body, input, select, textarea {
