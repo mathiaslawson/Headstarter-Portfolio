@@ -116,7 +116,7 @@ a.nav-list-item:hover {
 
 .logo-inner{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	width: 100px;
 }
 
@@ -3911,8 +3911,9 @@ input, select, textarea {
 
 		.stack-container{
 			display: flex;
+			flex-wrap: wrap;
 			flex-direction: row;
-			justify-content: space-arounf;	
+			justify-content: center;	
 			width: 100%;
 			margin-bottom: 40px;
 		}
