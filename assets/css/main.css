@@ -214,7 +214,7 @@ input, select, textarea {
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-image: url("/assets/css/images/down-over.jpg");
+		background-image: url("./images/down-over.jpg");
 		opacity: 0.1;
 		z-index: -1;
 	}
